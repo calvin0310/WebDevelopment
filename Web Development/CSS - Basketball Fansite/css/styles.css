@@ -1,0 +1,37 @@
+/********************TAG SELECTORS********************/
+
+h1 {
+    color: red;
+    font-size: 80px;
+}
+
+
+img {
+    background-color: silver;
+} 
+
+
+ 
+/********************CLASS SELECTORS********************/
+
+.basketball {
+    background-color: orange;
+}
+
+.weightlifting {
+    background-color: grey;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+.hover:hover {
+    background-color: gold;
+}
+
+/********************HEADING SELECTORS********************/
+
+#heading {
+    color: blue;
+}
