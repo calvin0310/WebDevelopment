@@ -2,31 +2,38 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    font-size: 2em;
 }
 
 h1 {
-    margin-top: 0;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-
+    color: #66BFBF;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; 
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    color: #11999E;
+}
+
+a {
+    color: #11999E;
+
+}
 /******************** container *********************************/
 .top-container {
     background-color: #e3fdfd;
     padding-top: 100px;
     position: relative;
-}
-
-.middle-container  {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-}
-
-.bottom-container {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
 }
 
 .pro {
@@ -43,4 +50,32 @@ h1 {
     position: absolute;
     right: 300px;
     top: 50px;
+}
+
+.titles {
+    line-height: 2;
+}
+
+.computer-img {
+    border-radius: 50%;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    text-align: left;
+    margin: 100px auto;
+    line-height: 2;
+}
+
+.weightlifter-img {
+    float: right;
+    width: 25%;
+    margin-left: 30px;
+}
+
+.code-skill-description {
+    clear: left
 }
