@@ -3,6 +3,8 @@ body {
     text-align: center;
     font-family: 'Merriweather', serif;
     font-size: 2em;
+    color: #40514E;
+
 }
 
 h1 {
@@ -17,6 +19,7 @@ h2 {
     font-size: 2.5rem; 
     color: #66BFBF;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -31,7 +34,7 @@ a {
 }
 /******************** container *********************************/
 .top-container {
-    background-color: #e3fdfd;
+    background-color: #EAF6F6;
     padding-top: 100px;
     position: relative;
 }
@@ -56,6 +59,21 @@ a {
     line-height: 2;
 }
 
+/* MySelf */
+.Calvin-img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #EAF6F6;
+    border-width: 5px;
+    width: 3%;
+}
+
+/* My Skills */
 .computer-img {
     border-radius: 50%;
     width: 25%;
@@ -77,5 +95,18 @@ a {
 }
 
 .code-skill-description {
-    clear: left
+    clear: left;
+}
+
+.weightlifting-skill-description {
+    clear: right;
+}
+
+.middle-container {
+    margin: 100px, 0;
+}
+
+.bottom-container {
+    background-color: #EAF6F6;
+
 }
