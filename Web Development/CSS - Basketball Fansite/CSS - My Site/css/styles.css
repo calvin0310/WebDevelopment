@@ -30,8 +30,20 @@ h3 {
 
 a {
     color: #11999E;
-
 }
+
+p {
+    line-height: 2;
+}
+
+hr {
+    /* border-style: none; */
+    border: dotted;
+    border-bottom: none;
+    border-color: #EAF6F6;
+    width: 4%;
+}
+
 /******************** container *********************************/
 .top-container {
     background-color: #EAF6F6;
@@ -43,16 +55,21 @@ a {
     text-decoration: underline;
 }
 
+.intro {
+    margin: auto;
+    width: 30%;
+}
+
 .bottom-cloud {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
 }
 
 .top-cloud {
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 40px;
 }
 
 .titles {
@@ -63,14 +80,6 @@ a {
 .Calvin-img {
     border-radius: 50%;
     width: 25%;
-}
-
-hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: #EAF6F6;
-    border-width: 5px;
-    width: 3%;
 }
 
 /* My Skills */
@@ -85,7 +94,6 @@ hr {
     width: 50%;
     text-align: left;
     margin: 100px auto;
-    line-height: 2;
 }
 
 .weightlifter-img {
