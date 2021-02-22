@@ -5,13 +5,16 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+var items = ["Buy Food", "Cook Food", "Eat Food"];
+
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extensions: true}));
+app.use(express.static("public"));
 
 app.post("/", function(req, res) {
-    // console.log(res);
-    console.log(req.body);
-
+    var item = req.body.newItem;
+    items.push(item);
+    res.redirect("/");
 });
 
 app.get("/", function(req, res) {
@@ -26,7 +29,8 @@ app.get("/", function(req, res) {
     var day = today.toLocaleDateString("en-US", options);
 
     res.render("list", {
-        kindOfDay: day
+        kindOfDay: day,
+        newListItems: items
     });
 
 });

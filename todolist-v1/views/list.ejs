@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>To Do List</title>
-    </head>
-    <body>
-        <h1> <%= kindOfDay %></h1>
-        <ul>
-            <li>Buy Food</li>
-            <li>Cook Food</li>
-            <li>Eat Food</li>
-            <form action="/" method="post">
-                <input type="text" name="addItem" placeholder="New Item">
-                <button type="submit">Add</button>
-            </form>
-        </ul>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1>
+            <%= kindOfDay %>
+        </h1>
+    </div>
+
+    <div class="box">
+        <% for (let i=0; i < newListItems.length; i++) { %>
+            <div class="item">
+                <input type="checkbox">
+                <p>
+                    <%= newListItems[i] %>
+                </p>
+            </div>
+
+            <% } %>
+
+                <form class="item" action="/" method="post">
+                    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+                    <button type="submit" name="button">+</button>
+                </form>
+    </div>
+
+
+</body>
+
 </html>
