@@ -1,4 +1,11 @@
 <%- include("partials/header") %>
-<h1>Home</h1>
-<p><%= startingContent %></p>
-<%- include("partials/footer") %>
+    <% for (let i = posts.length - 1; i >= 0; i--) { %>
+        <h1><%= posts[i].title %></h1>
+        <p><%= posts[i].content %></p>
+    <% } %>
+
+    <h1>Home</h1>
+    <p>
+        <%= startingContent %>
+    </p>
+    <%- include("partials/footer") %>
