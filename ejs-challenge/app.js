@@ -37,10 +37,8 @@ app.get("/posts/:postName", function(req, res) {
         if (storedTitle === requestedTitle) {
             res.render("post", {
                 post: post
-            })
+            });
             
-        } else {
-            console.log("Not a match!");
         }
     });
 });
